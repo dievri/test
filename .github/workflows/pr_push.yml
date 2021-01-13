@@ -1,0 +1,11 @@
+
+name: Push Pull
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Build KG Parser
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'this is triggered on both cases'
